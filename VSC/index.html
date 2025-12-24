@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>梗圖生成機器人(測試中)</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div id="loginOverlay">
+          <div id="loginBox">
+               <input type="text" placeholder="帳號">
+               <input type="password" placeholder="密碼">
+               <button onclick="login()">登入</button>
+          </div>
+     </div>
+
+
+     <div id="gpt">
+          <div class="sidebar" id="sidebar">
+               <button id="toggleSidebar" onclick="toggleSidebar()">◀</button>
+               <h3>梗圖機器人</h3>
+               <p>巴巴博弈</p>
+          </div>
+
+        <div class="top-bar">
+  <div class="hamburger-container">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <div id="menu" class="menu">
+      <div class="menu-item" onclick="toggleDark()">切換深/淺色模式</div>
+      <div class="menu-item" onclick="logout()">登出</div>
+      <div class="menu-item" onclick="goDetail()">查看詳情</div>
+    </div>
+  </div>
+</div>
+
+          <div class="main">
+               <div class="chat-area" id="chat"></div>
+               <div class="input-area">
+                    <input id="msgInput" placeholder="輸入提示詞(狗、貓、馬等...)" />
+                    <button onclick="sendMessage()">送出</button>
+               </div>
+          </div>
+
+          <script src="script.js"></script>
+</body>

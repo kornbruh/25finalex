@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>梗圖生成機器人(測試中)</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>梗圖詳情頁</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="sidebar" id="sidebar">
+    <button id="toggleSidebar" onclick="toggleSidebar()">◀</button>
+    <h3>梗圖機器人</h3>
+    <p>巴巴博弈</p>
+  </div>
+
+<div class="top-bar">
+  <div class="hamburger-container">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <div id="menu" class="menu">
+      <div class="menu-item" onclick="toggleDark()">切換深/淺色模式</div>
+      <div class="menu-item" onclick="logout()">登出</div>
+      <div class="menu-item" onclick="goHome()">回到主頁</div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="main">
+    <h2 style="padding:16px;">動物梗圖詳情</h2>
+    <div class="detail-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;padding:16px;">
+      
+      <div class="card">
+        <img src="rat.jpg" alt="鼠" style="width:100%;border-radius:8px;">
+        <p style="text-align:center;margin-top:6px;">鼠</p>
+      </div>
+
+      <div class="card">
+        <img src="cat.jpg" alt="貓" style="width:100%;border-radius:8px;">
+        <p style="text-align:center;margin-top:6px;">貓</p>
+      </div>
+
+      <div class="card">
+        <img src="dog.jpg" alt="狗" style="width:100%;border-radius:8px;">
+        <p style="text-align:center;margin-top:6px;">狗</p>
+      </div>
+
+      <div class="card">
+        <img src="horse.jpg" alt="馬" style="width:100%;border-radius:8px;">
+        <p style="text-align:center;margin-top:6px;">馬</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
